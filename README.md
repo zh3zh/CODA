@@ -3,11 +3,17 @@ This pipeline is used to generate the base-pairing map from deep mutational sequ
 Before running this pipline, make sure these programs were correctly installed.
 
   SeqPrep (https://github.com/jstjohn/SeqPrep)
+  
   python 2.7.15
+  
   unpigz 2.4
+  
   gsplit 8.29
+  
   pigz 2.4
+  
   samtools 0.0.18
+  
   java 1.7.0_85
 
 Usage:
