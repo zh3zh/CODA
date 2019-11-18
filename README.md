@@ -1,4 +1,4 @@
-This pipeline is used to generate base pairing map from deep mutational sequencing data of RNA ribozyme, with the method introduced in the paper "Precise inference of RNA base-pairing structure by deep mutational scanning and covariation-induced deviation of activity". 
+This pipeline is used to generate the base-pairing map from deep mutational sequencing data of RNA ribozyme, with the method introduced in the paper "Accurate inference of the full base-pairing structure of RNA by deep mutational scanning and covariation-induced deviation of activity".
 
 Before running this pipline, make sure these programs were correctly installed.
 
@@ -29,4 +29,4 @@ Outputs:
   var.pos.ra: organized relative activity of all mutants of each position pair
   var.msa_RA_0.5: sequence alignment of variants with relative activity higher than 0.5
   pred.mtx: ps score matrix
-  pred.ss: 100 predicted seconary struture in bracket format with consensus prediction
+  pred.ss: 100 predicted secondary structure in the bracket format with a consensus prediction
