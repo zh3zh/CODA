@@ -37,6 +37,7 @@ Arguments:
 
 
 Outputs:
+
   var.count: uncleaved and cleaved read number of each variant
   
   var.ra: organized relative activity of each variant
