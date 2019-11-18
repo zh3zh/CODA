@@ -4,6 +4,7 @@ RNAFILE1=$3
 RNAFILE2=$4
 FASTAFILE=$5
 OUTPUTPATH=$6
+Weighting_factor=$7
 
 
 
@@ -56,4 +57,4 @@ echo "calculate ps score..."
 python PredictContact.py $OUTPUTPATH/var.ra $OUTPUTPATH/var.pos.ra $fastaSeq $OUTPUTPATH/var.features $OUTPUTPATH/pred.mtx
 
 echo "run monte carlo..."
-java -Xmx2000m codaMC/RunPredict $fastaSeq $OUTPUTPATH/pred.mtx $weighting_factor >$OUTPUTPATH/pred.ss
+java -Xmx2000m codaMC/RunPredict $fastaSeq $OUTPUTPATH/pred.mtx $Weighting_factor >$OUTPUTPATH/pred.ss
