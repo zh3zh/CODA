@@ -1,4 +1,8 @@
+
+# Introduction
 This pipeline is used to generate the base-pairing map from deep mutational sequencing data of RNA ribozyme, with the method introduced in the paper "Accurate inference of the full base-pairing structure of RNA by deep mutational scanning and covariation-induced deviation of activity".
+
+# Requirement
 
 Before running this pipline, make sure these programs were correctly installed.
 
@@ -17,12 +21,13 @@ Before running this pipline, make sure these programs were correctly installed.
   java 1.7.0_85
 
 
-Usage:
+# Usage
 
-  bash run.sh $DNAFILE1 $DNAFILE2 $RNAFILE1 $RNAFILE2 $FASTAFILE $OUTPUTPATH
+  `bash run.sh $DNAFILE1 $DNAFILE2 $RNAFILE1 $RNAFILE2 $FASTAFILE $OUTPUTPATH`
 
-Arguments:
+# Arguments:
   
+  ```
   $DNAFILE1: first read DNA sequencing file, in gziped fastq format (fq.gz)
   
   $DNAFILE2: second read DNA sequencing file, in gziped fastq format (fq.gz)
@@ -34,9 +39,9 @@ Arguments:
   $FASTAFILE: base sequence file in fasta format (ATGC sequence)
   
   $OUTPUTPATH: all output files will be written here, empty file folder is recommended
+```
 
-
-Outputs:
+# Outputs:
 
   var.count: uncleaved and cleaved read number of each variant
   
@@ -50,9 +55,8 @@ Outputs:
   
   pred.ss: 100 predicted secondary structure in the bracket format with a consensus prediction
   
+
+# MSA(Multiple sequence alignment) files:
   
-MSA(Multiple sequence alignment) files:
-  
-  cp.var.msa_RA_0.5: MSA of CPEB3 used to perform covariation analysis.  
-  
+  cp.var.msa_RA_0.5: MSA of CPEB3 used to perform covariation analysis.    
   tw.var.msa_RA_0.5: MSA of CPEB3 used to perform covariation analysis. 
