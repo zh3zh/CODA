@@ -56,7 +56,7 @@ Before running this pipline, make sure these programs were correctly installed.
   pred.ss: 100 predicted secondary structure in the bracket format with a consensus prediction
   
 
-# MSA(Multiple sequence alignment) files:
+#### MSA(Multiple sequence alignment) files:
   
   cp.var.msa_RA_0.5: MSA of CPEB3 used to perform covariation analysis.    
   tw.var.msa_RA_0.5: MSA of CPEB3 used to perform covariation analysis. 
